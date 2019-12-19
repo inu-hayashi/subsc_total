@@ -7,7 +7,8 @@
   <title>課金しているサブスクリプションの合計がわかるサービス</title>
 </head>
 <body>
-  課金しているサブスクリプションを選んでください
+  <h2>課金しているサブスクリプションの合計を大まかに算出します</h2>
+  <p>利用しているサブスクリプションを選んでください</p>
   <form name="subscription">
     <h3>総合</h3>
     <ul>
@@ -24,8 +25,19 @@
 </ul>
   <h3>動画</h3>
   <ul>
-    <li><input type="checkbox" name="AWA" value="960" onclick="total()" id="awa"><label for="awa">AWA</label></li>
+    <!-- <li><input type="checkbox" name="Amazonプライムビデオ" value="500" onclick="total()" id="amazonprimevideo"><label for="amazonprimevideo">Amazonプライムビデオ</label></li> -->
+    <li><input type="checkbox" name="Hulu" value="1007" onclick="total()" id="hulu"><label for="hulu">Hulu</label></li>
+    <li><input type="checkbox" name="Netflix" value="800" onclick="total()" id="netflix"><label for="netflix">Netflix</label></li>
+    <li><input type="checkbox" name="dTV" value="550" onclick="total()" id="dtv"><label for="dtv">dTV</label></li>
+    <li><input type="checkbox" name="U-NEXT" value="2189" onclick="total()" id="unext"><label for="unext">U-NEXT</label></li>
   </ul>
+
+  <h3>読書</h3>
+  <ul>
+    <li><input type="checkbox" name="Hulu" value="1007" onclick="total()" id="hulu"><label for="hulu">Hulu</label></li>
+  </ul>
+
+
 合計:<input type="text" name="_total" value="">円
 <input type="reset" name="" value="やり直し">
     </form>
