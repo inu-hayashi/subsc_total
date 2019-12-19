@@ -9,10 +9,23 @@
 <body>
   課金しているサブスクリプションを選んでください
   <form name="subscription">
-    <input type="checkbox" name="amazonprime" value="1000" onclick="total()">amazonprime
-    <input type="checkbox" name="applemusic" value="2000" onclick="total()">applemusic
-    <input type="checkbox" name="applemusic" value="2000" onclick="total()">applemusic
+    <h3>総合</h3>
+    <ul>
+      <li><input type="checkbox" name="Amazonプライム" value="500" onclick="total()" id="amazonprime"><label for="amazonprime">Amazonプライム</label></li>
+    </ul>
 
+    <h3>音楽</h3>
+<ul>
+  <li><input type="checkbox" name="Apple Music" value="980" onclick="total()" id="applemusic_personal"><label for="applemusic_personal">Apple Music</label></li>
+  <li><input type="checkbox" name="Amazon Music Unlimited" value="980" onclick="total()" id="amazonmusicunlimited"><label for="amazonmusicunlimited">Amazon Music Unlimited</label></li>
+  <li><input type="checkbox" name="AWA" value="960" onclick="total()" id="awa"><label for="awa">AWA</label></li>
+  <li><input type="checkbox" name="Spotify" value="980" onclick="total()" id="spotify"><label for="spotify">Spotify</label></li>
+  <li><input type="checkbox" name="Google Play Music" value="980" onclick="total()" id="googleplaymusic"><label for="googleplaymusic">Google Play Music</label></li>
+</ul>
+  <h3>動画</h3>
+  <ul>
+    <li><input type="checkbox" name="AWA" value="960" onclick="total()" id="awa"><label for="awa">AWA</label></li>
+  </ul>
 合計:<input type="text" name="_total" value="">円
 <input type="reset" name="" value="やり直し">
     </form>
