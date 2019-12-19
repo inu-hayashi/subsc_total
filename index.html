@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>課金しているサブスクリプションの合計がわかるサービス</title>
 </head>
+
 <body>
-  <h2>課金しているサブスクリプションの合計を大まかに算出します</h2>
+  <h2>代表的なサブスクリプションサービスの合計を大まかに算出します</h2>
   <p>利用しているサブスクリプションを選んでください</p>
   <form name="subscription">
     <h3>総合</h3>
@@ -16,33 +18,35 @@
     </ul>
 
     <h3>音楽</h3>
-<ul>
-  <li><input type="checkbox" name="Apple Music" value="980" onclick="total()" id="applemusic_personal"><label for="applemusic_personal">Apple Music</label></li>
-  <li><input type="checkbox" name="Amazon Music Unlimited" value="980" onclick="total()" id="amazonmusicunlimited"><label for="amazonmusicunlimited">Amazon Music Unlimited</label></li>
-  <li><input type="checkbox" name="AWA" value="960" onclick="total()" id="awa"><label for="awa">AWA</label></li>
-  <li><input type="checkbox" name="Spotify" value="980" onclick="total()" id="spotify"><label for="spotify">Spotify</label></li>
-  <li><input type="checkbox" name="Google Play Music" value="980" onclick="total()" id="googleplaymusic"><label for="googleplaymusic">Google Play Music</label></li>
-</ul>
-  <h3>動画</h3>
-  <ul>
-    <!-- <li><input type="checkbox" name="Amazonプライムビデオ" value="500" onclick="total()" id="amazonprimevideo"><label for="amazonprimevideo">Amazonプライムビデオ</label></li> -->
-    <li><input type="checkbox" name="Hulu" value="1007" onclick="total()" id="hulu"><label for="hulu">Hulu</label></li>
-    <li><input type="checkbox" name="Netflix" value="800" onclick="total()" id="netflix"><label for="netflix">Netflix</label></li>
-    <li><input type="checkbox" name="dTV" value="550" onclick="total()" id="dtv"><label for="dtv">dTV</label></li>
-    <li><input type="checkbox" name="U-NEXT" value="2189" onclick="total()" id="unext"><label for="unext">U-NEXT</label></li>
-  </ul>
+    <ul>
+      <li><input type="checkbox" name="Apple Music" value="980" onclick="total()" id="applemusic_personal"><label for="applemusic_personal">Apple Music</label></li>
+      <li><input type="checkbox" name="Amazon Music Unlimited" value="980" onclick="total()" id="amazonmusicunlimited"><label for="amazonmusicunlimited">Amazon Music Unlimited</label></li>
+      <li><input type="checkbox" name="AWA" value="960" onclick="total()" id="awa"><label for="awa">AWA</label></li>
+      <li><input type="checkbox" name="Spotify" value="980" onclick="total()" id="spotify"><label for="spotify">Spotify</label></li>
+      <li><input type="checkbox" name="Google Play Music" value="980" onclick="total()" id="googleplaymusic"><label for="googleplaymusic">Google Play Music</label></li>
+    </ul>
+    <h3>動画</h3>
+    <ul>
+      <!-- <li><input type="checkbox" name="Amazonプライムビデオ" value="500" onclick="total()" id="amazonprimevideo"><label for="amazonprimevideo">Amazonプライムビデオ</label></li> -->
+      <li><input type="checkbox" name="Hulu" value="1007" onclick="total()" id="hulu"><label for="hulu">Hulu</label></li>
+      <li><input type="checkbox" name="Netflix" value="800" onclick="total()" id="netflix"><label for="netflix">Netflix</label></li>
+      <li><input type="checkbox" name="dTV" value="550" onclick="total()" id="dtv"><label for="dtv">dTV</label></li>
+      <li><input type="checkbox" name="U-NEXT" value="2189" onclick="total()" id="unext"><label for="unext">U-NEXT</label></li>
+    </ul>
 
-  <h3>読書</h3>
-  <ul>
-    <li><input type="checkbox" name="Hulu" value="1007" onclick="total()" id="hulu"><label for="hulu">Hulu</label></li>
-  </ul>
+    <h3>読書</h3>
+    <ul>
+      <li><input type="checkbox" name="Kindle Unlimited" value="980" onclick="total()" id="kindleunlimited"><label for="kindleunlimited">Kindle Unlimited</label></li>
+      <li><input type="checkbox" name="dマガジン" value="400" onclick="total()" id="dmagazine"><label for="dmagazine">dマガジン</label></li>
+      <li><input type="checkbox" name="楽天マガジン" value="380" onclick="total()" id="rakutenmagazine"><label for="rakutenmagazine">楽天マガジン</label></li>
+    </ul>
 
-
-合計:<input type="text" name="_total" value="">円
-<input type="reset" name="" value="やり直し">
-    </form>
+    合計:<input type="text" name="_total" value="">円
+    <input type="reset" name="" value="やり直し">
+  </form>
 
 
   <script src="js/total.js"></script>
 </body>
+
 </html>
